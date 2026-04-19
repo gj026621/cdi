@@ -4,12 +4,14 @@
 <!-- works. -->
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
+  <title>Pages liminaires</title>
   <bibinfo>
   
     <author>
       <personname>Julien Giol</personname>
       <department>Département de mathématiques</department>
       <institution>Collège Ahuntsic</institution>
+      <email>julien.giol@gmail.com</email>
     </author>
     <date>
       <today />
@@ -22,7 +24,7 @@
     <copyright>
       <year>2026<ndash />2027</year>
       <holder>Julien Giol</holder>
-      <shortlicense>Cette oeuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International. Pour voir une copie de cette licence, visitez <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      <shortlicense>Ce livre est mis à votre disposition selon les termes de la Licence Creative Commons Attribution - Partage dans les Mêmes Conditions 4.0 International. Pour voir une copie de cette licence, visitez <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
       </shortlicense>
     </copyright>
   

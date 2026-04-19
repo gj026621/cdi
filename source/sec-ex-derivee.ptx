@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-ex-derivee" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Exercices</title>
+
+  <exercises>
+    <exercise>
+      <statement>
+        <p>
+          Dérivez <m>f(x)=x^2+x+1</m> en utilisant la définition de la dérivée.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>f'(x)=2x+1</m>
+        </p>
+      </answer>
+    </exercise>
+  </exercises>
+
+</section>

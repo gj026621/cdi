@@ -6,7 +6,7 @@
 <!-- solutions in the next. Then there is an appendix -->
 <!-- with all notation generated, and finally the index. -->
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
-  <title>Backmatter</title>
+  <title>Pages finales</title>
 
   <!-- <solutions divisional="hint"> <title>Selected Hints</title> </solutions> -->
 
@@ -14,7 +14,7 @@
 
   <!-- <appendix> <title>List of Symbols</title> <notation-list/> </appendix> -->
 
-  <!-- <index> <title>Index</title> <index-list/> </index> -->
+  <index> <title>Index</title> <index-list/> </index>
 
   <colophon>
     <p>Ce livre a été rédigé avec <pretext />. </p>

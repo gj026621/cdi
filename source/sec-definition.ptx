@@ -3,4 +3,14 @@
 <section xml:id="sec-definition" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Définition de la dérivée</title>
 
+  <sage>
+    <input>
+    f(x)=x^2+x+1
+    g(x)=derivative(f(x),x)
+    show(g(x))
+    </input>
+    <output>
+    2x+1
+    </output>
+  </sage>
 </section>
