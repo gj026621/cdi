@@ -19,6 +19,15 @@ var ptx_lunr_docs = [
   "body": " Notion de limite  "
 },
 {
+  "id": "sec-definition",
+  "level": "1",
+  "url": "sec-definition.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Définition de la dérivée",
+  "body": " Définition de la dérivée  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
