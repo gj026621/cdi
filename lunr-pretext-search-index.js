@@ -10,13 +10,13 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
-  "id": "sec-section-name",
+  "id": "sec-notion",
   "level": "1",
-  "url": "sec-section-name.html",
+  "url": "sec-notion.html",
   "type": "Section",
   "number": "1.1",
-  "title": "Section Title",
-  "body": " Section Title  Text of section.  "
+  "title": "Notion de limite",
+  "body": " Notion de limite  "
 },
 {
   "id": "backmatter-2",
@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": " This book was authored in PreTeXt .  "
+  "body": " Ce livre a été rédigé avec PreTeXt .  "
 }
 ]
 
