@@ -34,7 +34,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Définition de la dérivée",
-  "body": " Définition de la dérivée   "
+  "body": " Définition de la dérivée   La Dérivée en un point   Soit une fonction définie sur un intervalle ouvert contenant . La dérivée de en , notée , est définie par la limite à condition que cette limite existe. Si la limite existe, on dit que est dérivable en .     Définition de la dérivée : la sécante passant par deux points de la courbe   Graphique TikZ montrant une sécante noire passant exactement par (x, f(x)) et (x+h, f(x+h)).      Animation interactive de la dérivée     "
+},
+{
+  "id": "def-derivee",
+  "level": "2",
+  "url": "sec-definition.html#def-derivee",
+  "type": "Définition",
+  "number": "2.1.1",
+  "title": "La Dérivée en un point.",
+  "body": " La Dérivée en un point   Soit une fonction définie sur un intervalle ouvert contenant . La dérivée de en , notée , est définie par la limite à condition que cette limite existe. Si la limite existe, on dit que est dérivable en .   "
+},
+{
+  "id": "fig-derivee-correction",
+  "level": "2",
+  "url": "sec-definition.html#fig-derivee-correction",
+  "type": "Figure",
+  "number": "2.1.2",
+  "title": "",
+  "body": " Définition de la dérivée : la sécante passant par deux points de la courbe   Graphique TikZ montrant une sécante noire passant exactement par (x, f(x)) et (x+h, f(x+h)).    "
+},
+{
+  "id": "fig-animation-sage-derivee",
+  "level": "2",
+  "url": "sec-definition.html#fig-animation-sage-derivee",
+  "type": "Figure",
+  "number": "2.1.3",
+  "title": "",
+  "body": " Animation interactive de la dérivée   "
 },
 {
   "id": "sec-ex-derivee",
@@ -91,13 +118,49 @@ var ptx_lunr_docs = [
   "body": " Intégrale indéfinie  "
 },
 {
-  "id": "ch-integrale-definie",
+  "id": "sec-sommes-riemann",
   "level": "1",
-  "url": "ch-integrale-definie.html",
-  "type": "Chapitre",
-  "number": "5",
-  "title": "Intégrale définie",
-  "body": " Intégrale définie  "
+  "url": "sec-sommes-riemann.html",
+  "type": "Section",
+  "number": "5.1",
+  "title": "Sommes de Riemann",
+  "body": " Sommes de Riemann   "
+},
+{
+  "id": "sec-tfc",
+  "level": "1",
+  "url": "sec-tfc.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Théorème fondamental du calcul différentiel et intégral",
+  "body": " Théorème fondamental du calcul différentiel et intégral   Théorème fondamental du calcul, partie I   Soit une fonction continue sur . La fonction définie par est continue sur , dérivable sur et sa dérivée est .     Théorème fondamental du calcul, partie II   Si est continue sur et est une primitive de , alors .    "
+},
+{
+  "id": "tfc1",
+  "level": "2",
+  "url": "sec-tfc.html#tfc1",
+  "type": "Théorème",
+  "number": "5.2.1",
+  "title": "Théorème fondamental du calcul, partie I.",
+  "body": " Théorème fondamental du calcul, partie I   Soit une fonction continue sur . La fonction définie par est continue sur , dérivable sur et sa dérivée est .   "
+},
+{
+  "id": "tfc2",
+  "level": "2",
+  "url": "sec-tfc.html#tfc2",
+  "type": "Théorème",
+  "number": "5.2.2",
+  "title": "Théorème fondamental du calcul, partie II.",
+  "body": " Théorème fondamental du calcul, partie II   Si est continue sur et est une primitive de , alors .   "
+},
+{
+  "id": "sec-calcul-aires",
+  "level": "1",
+  "url": "sec-calcul-aires.html",
+  "type": "Section",
+  "number": "5.3",
+  "title": "Calcul d’aires",
+  "body": " Calcul d'aires  "
 },
 {
   "id": "ch-techniques",
