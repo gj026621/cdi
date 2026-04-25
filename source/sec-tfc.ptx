@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-tfc" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Théorème fondamental du calcul différentiel et intégral</title>
+
+  <theorem xml:id="tfc1">
+      <title>Théorème fondamental du calcul, partie I</title>
+      <statement>
+          <p>
+              Soit <m>f</m> une fonction continue sur <m>[a; b]</m>. La fonction <m>G</m> définie par 
+              <me>G(x) := \int_{a}^{x} f(t) \, dt</me> 
+              est continue sur <m>[a; b]</m>, dérivable sur <m>]a; b[</m> et sa dérivée est <m>G'(x) = f(x)</m>.
+          </p>
+      </statement>
+  </theorem>
+
+  <theorem xml:id="tfc2">
+      <title>Théorème fondamental du calcul, partie II</title>
+      <statement>
+          <p>
+              Si <m>f</m> est continue sur <m>[a; b]</m> et <m>F</m> est une primitive de <m>f</m>, alors 
+              <me>\int_{a}^{b} f(x) \, dx = F(b) - F(a)</me>.
+          </p>
+      </statement>
+  </theorem>
+
+</section>

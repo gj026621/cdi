@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-sommes-riemann" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sommes de Riemann</title>
+
+  <interactive xml:id="interactive_rectangles" platform="sage" width="100%" aspect="17:27">
+    <slate surface="sage">
+      @interact
+      def _(f = input_box(label = html(r'\(f(x)\)'), default = 3 * sin(x) + 5, width = 30), a = input_box(label = html(r'\(a\)'), default = 1, width = 10), b = input_box(label = html(r'\(b\)'), default = 7, width = 10), n = input_box(label = html(r'\(n\)'), default = 3, width = 10), Rectangles = ['Gauche', 'Milieu', 'Droite']):
+          if Rectangles == 'Gauche':
+              t = 0
+              couleur = 'blue'
+          elif Rectangles == 'Droite':
+              t = 1
+              couleur = 'yellow'
+          else:
+              t = 0.5
+              couleur = 'green'
+          f(x) = f
+          integrale = integral(f(x), x, a, b).n()
+          deltaX = (b - a) / n
+          x_k = a
+          approximation = 0
+          L = []
+          for i in range(0, n):
+              xi_i = x_k + t * deltaX
+              y_i = f(xi_i)
+              approximation = approximation + y_i
+              L = L + [(x_k, 0)]
+              L = L + [(x_k, y_i)]
+              x_k = x_k + deltaX
+              L = L + [(x_k, y_i)]
+          approximation = (deltaX * approximation).n()
+          erreur = integrale - approximation
+          L = L + [(x_k,0)]
+          G = plot(f(x), (x, a-(b-a)/20, b+(b-a)/20), color = 'red', thickness = 1)
+          G = G + plot(f(x), (x, a, b), color = 'red', thickness = 1, fill = true, fillcolor = 'grey')
+          G = G + polygon(L, edgecolor = 'black', color = couleur)
+          G.show(aspect_ratio = 'automatic', figsize = 5)
+          pretty_print(html(r'Valeur exacte : \[\int_{%s}^{%s}f(x)\,\mathrm{d}x=%s\]' %(a, b, integrale)))
+          pretty_print(html(r'Approximation par la méthode des rectangles : \[%s\]'%approximation))
+          pretty_print(html(r'Erreur : \[%s\]' %erreur))
+    </slate>
+  </interactive>
+
+</section>

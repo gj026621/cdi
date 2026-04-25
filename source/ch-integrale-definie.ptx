@@ -3,4 +3,8 @@
 <chapter xml:id="ch-integrale-definie" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Intégrale définie</title>
 
+  <xi:include href="sec-sommes-riemann.ptx" />
+  <xi:include href="sec-tfc.ptx" />
+  <xi:include href="sec-calcul-aires.ptx" />
+
 </chapter>

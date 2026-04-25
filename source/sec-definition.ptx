@@ -3,6 +3,93 @@
 <section xml:id="sec-definition" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Définition de la dérivée</title>
 
+  <definition xml:id="def-derivee">
+    <title>La Dérivée en un point</title>
+    <statement>
+        <p>
+            Soit <m>f</m> une fonction définie sur un intervalle ouvert contenant <m>x</m>. 
+            La <term>dérivée</term> de <m>f</m> en <m>x</m>, notée <m>f'(x)</m>, est définie par la limite
+            <me>f'(x) := \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}</me>
+            à condition que cette limite existe. Si la limite existe, on dit que <m>f</m> est 
+            <term>dérivable</term> en <m>x</m>.
+        </p>
+    </statement>
+  </definition>
+
+  <figure xml:id="fig-derivee-correction">
+      <caption>Définition de la dérivée : la sécante passant par deux points de la courbe</caption>
+      <image xml:id="img-tikz-derivee-correcte">
+          <description>Graphique TikZ montrant une sécante noire passant exactement par (x, f(x)) et (x+h, f(x+h)).</description>
+          <latex-image>
+              \begin{tikzpicture}[scale=1.5]
+                  % Axes
+                  \draw[-&gt;, &gt;=latex] (-0.5,0) -- (4.5,0) node[right] {$x$};
+                  \draw[-&gt;, &gt;=latex] (0,-0.5) -- (0,4) node[above] {$y$};
+                  
+                  % Fonction f(x) = 0.2*x^2 + 0.5
+                  \draw[very thick, cyan!70!black] plot [domain=0.5:4, samples=100] (\x, {0.2*\x*\x + 0.5}) node[right] {$y=f(x)$};
+                  
+                  % Paramètres x et h
+                  \def\xone{1.2}
+                  \def\h{2.0}
+                  \pgfmathsetmacro{\yone}{0.2*\xone*\xone + 0.5}
+                  \pgfmathsetmacro{\xtwo}{\xone + \h}
+                  \pgfmathsetmacro{\ytwo}{0.2*\xtwo*\xtwo + 0.5}
+                  \pgfmathsetmacro{\slopeTan}{0.4*\xone}
+
+                  % --- LA SÉCANTE (CORRIGÉE) ---
+                  % On trace la droite passant par les deux points calculés
+                  \draw[thick, black, shorten &gt;=-0.7cm, shorten &lt;=-0.7cm] (\xone,\yone) -- (\xtwo,\ytwo) 
+                      node[pos=1.1, right] {Sécante};
+                  
+                  % --- LA TANGENTE ---
+                  \draw[thick, red!80!black, shorten &gt;=-1.2cm, shorten &lt;=-0.8cm] 
+                      (\xone, \yone) ++(-1, -1*\slopeTan) -- ++(3, 3*\slopeTan)
+                      node[pos=0.9, below right] {Tangente};
+
+                  % Points, pointillés et étiquettes
+                  \draw[dashed] (\xone,0) node[below] {$x$} -- (\xone,\yone);
+                  \draw[dashed] (\xtwo,0) node[below] {$x+h$} -- (\xtwo,\ytwo);
+                  \filldraw[black] (\xone,\yone) circle (1.5pt);
+                  \filldraw[black] (\xtwo,\ytwo) circle (1.5pt);
+
+                  % Triangle de pente (h et Delta y)
+                  \draw[blue!60!black, thin] (\xone,\yone) -- (\xtwo,\yone) node[midway, below] {$h$};
+                  \draw[blue!60!black, thin] (\xtwo,\yone) -- (\xtwo,\ytwo) node[midway, right] {$\Delta y$};
+                  
+                  % Indicateur h -> 0
+                  \draw[-&gt;, &gt;=stealth, bend right] (3, 0.3) to (1.5, 0.3);
+                  \node[scale=0.8] at (2.2, 0.5) {$h \to 0$};
+              \end{tikzpicture}
+          </latex-image>
+      </image>
+  </figure>
+
+  <figure xml:id="fig-animation-sage-derivee">
+    <caption>Animation interactive de la dérivée</caption>
+    <sage>
+        <input>
+            @interact
+            def _(f = input_box(default=x^2 + 1, label="$f(x)$"), 
+                  x0 = slider(0, 5, step_size=0.1, default=1, label="$x_0$"), 
+                  h = slider(0.01, 3, step_size=0.01, default=2, label="$h$")):
+                y0 = f(x=x0)
+                x1 = x0 + h
+                y1 = f(x=x1)
+                m_sec = (y1 - y0) / h
+                secante(x) = m_sec * (x - x0) + y0
+                m_tan = diff(f,x)(x=x0)
+                tangente(x) = m_tan * (x - x0) + y0
+                
+                P = plot(f, (x, 0, 5), thickness=2, color='blue')
+                P += plot(secante, (x, 0, 5), color='black', linestyle='--')
+                P += plot(tangente, (x, 0, 5), color='red', thickness=1.5)
+                P += point([(x0, y0), (x1, y1)], color='black', size=30)
+                P.show(ymin=0, ymax=25)
+        </input>
+    </sage>
+  </figure>
+
   <sage>
     <input>
     f(x)=x^2+x+1
