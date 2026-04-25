@@ -3,4 +3,29 @@
 <section xml:id="sec-ex-applications" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exercices</title>
 
+  <exercises>
+    <exercise>
+      <statement>
+        <p>
+          Un bel énoncé ici.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Une indication.
+        </p>
+      </hint>
+      <answer>
+        <p>
+          La réponse.
+        </p>
+      </answer>
+      <solution>
+        <p>
+          La solution détaillée.
+        </p>
+      </solution>
+    </exercise>
+  </exercises>
+
 </section>
