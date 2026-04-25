@@ -14,7 +14,11 @@
     <!-- Include chapters -->
     <xi:include href="./ch-limites.ptx" />
     <xi:include href="./ch-derivee.ptx" />
-    <xi:include href="./ch-applications.ptx" />
+    <xi:include href="./ch-applications-derivee.ptx" />
+    <xi:include href="./ch-integrale-indefinie.ptx" />
+    <xi:include href="./ch-integrale-definie.ptx" />
+    <xi:include href="./ch-techniques.ptx" />
+    <xi:include href="./ch-applications-integrale.ptx" />
 
 
     <!-- Include backmatter -->

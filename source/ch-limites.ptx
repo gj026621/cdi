@@ -4,7 +4,7 @@
   <title>Limites et continuité</title>
 
   <!-- include sections -->
-  <xi:include href="sec-notion.ptx" />
+  <xi:include href="sec-notion-limite.ptx" />
   <xi:include href="sec-ex-limites.ptx" />
 
 </chapter>
