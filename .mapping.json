@@ -1,1 +1,1 @@
-{"source/main.ptx": ["cdi", "frontmatter", "front-colophon", "ch-limites", "sec-notion", "sec-ex-limites", "ch-derivee", "sec-definition", "sec-ex-derivee", "ch-applications", "sec-taux", "sec-ex-applications", "backmatter"]}
+{"source/main.ptx": ["cdi", "frontmatter", "front-colophon", "ch-limites", "sec-notion-limite", "sec-ex-limites", "ch-derivee", "sec-definition", "sec-ex-derivee", "ch-applications-derivee", "sec-taux", "sec-ex-applications-derivee", "ch-integrale-indefinie", "ch-integrale-definie", "ch-techniques", "ch-applications-integrale", "backmatter"]}

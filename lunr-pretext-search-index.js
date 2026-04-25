@@ -10,9 +10,9 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
-  "id": "sec-notion",
+  "id": "sec-notion-limite",
   "level": "1",
-  "url": "sec-notion.html",
+  "url": "sec-notion-limite.html",
   "type": "Section",
   "number": "1.1",
   "title": "Notion de limite",
@@ -64,13 +64,58 @@ var ptx_lunr_docs = [
   "body": " Taux liés  "
 },
 {
-  "id": "sec-ex-applications",
+  "id": "sec-ex-applications-derivee",
   "level": "1",
-  "url": "sec-ex-applications.html",
+  "url": "sec-ex-applications-derivee.html",
   "type": "Section",
   "number": "3.2",
   "title": "Exercices",
-  "body": " Exercices  "
+  "body": " Exercices     Un bel énoncé ici.    Une indication.    La réponse.    La solution détaillée.     "
+},
+{
+  "id": "sec-ex-applications-derivee-2-1",
+  "level": "2",
+  "url": "sec-ex-applications-derivee.html#sec-ex-applications-derivee-2-1",
+  "type": "Exercice",
+  "number": "3.2.1",
+  "title": "",
+  "body": "  Un bel énoncé ici.    Une indication.    La réponse.    La solution détaillée.   "
+},
+{
+  "id": "ch-integrale-indefinie",
+  "level": "1",
+  "url": "ch-integrale-indefinie.html",
+  "type": "Chapitre",
+  "number": "4",
+  "title": "Intégrale indéfinie",
+  "body": " Intégrale indéfinie  "
+},
+{
+  "id": "ch-integrale-definie",
+  "level": "1",
+  "url": "ch-integrale-definie.html",
+  "type": "Chapitre",
+  "number": "5",
+  "title": "Intégrale définie",
+  "body": " Intégrale définie  "
+},
+{
+  "id": "ch-techniques",
+  "level": "1",
+  "url": "ch-techniques.html",
+  "type": "Chapitre",
+  "number": "6",
+  "title": "Techniques d’intégration avancées",
+  "body": " Techniques d'intégration avancées  "
+},
+{
+  "id": "ch-applications-integrale",
+  "level": "1",
+  "url": "ch-applications-integrale.html",
+  "type": "Chapitre",
+  "number": "7",
+  "title": "Applications de l’intégrale",
+  "body": " Applications de l'intégrale  "
 },
 {
   "id": "backmatter-2",
